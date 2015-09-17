@@ -112,7 +112,7 @@ itcl::class CodeWriter {
 }
 
 set writerObj [CodeWriter #auto]
-$writerObj SetUmlFile [file join [file dir [info script] test.uxf]]
-$writerObj SetOutfile [file join [file dir [info script] test.tcl]]
+$writerObj SetUmlFile [file join [file dir [info script]] test.uxf]
+$writerObj SetOutfile [file join [file dir [info script]] test.tcl]
 $writerObj ReadUmlFile
 $writerObj WriteTclCode
