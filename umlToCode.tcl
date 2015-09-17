@@ -112,7 +112,7 @@ itcl::class CodeWriter {
 }
 
 set writerObj [CodeWriter #auto]
-$writerObj SetUmlFile {D:\Users\rajatg\2014\projects\unity\snrd-unity\test.uxf}
-$writerObj SetOutfile {D:\Users\rajatg\2014\projects\unity\snrd-unity\test.tcl}
+$writerObj SetUmlFile [file join [file dir [info script] test.uxf]]
+$writerObj SetOutfile [file join [file dir [info script] test.tcl]]
 $writerObj ReadUmlFile
 $writerObj WriteTclCode
